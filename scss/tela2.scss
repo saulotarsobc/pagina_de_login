@@ -1,0 +1,115 @@
+#tela2 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    /*  */
+    >main {
+        background-color: #6644e8;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        /*  */
+        #wrap {
+            height: 100%;
+            width: 410px;
+            /*  */
+            #logo {
+                height: 40%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #form {
+                background-color: rgb(255, 255, 255);
+                height: 60%;
+                width: 100%;
+                border-radius: 30px 30px 0 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                /*  */
+                #titulo_subtitulo {
+                    width: 100%;
+                    padding: 0 50px;
+                    #titulo {
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    #subtitulo {
+                        font-size: 14px;
+                        color: gray;
+                    }
+                }
+                .input_group {
+                    width: 100%;
+                    padding: 0 50px;
+                    position: relative;
+                    /*  */
+                    label {
+                        display: block;
+                        color: gray;
+                    }
+                    input {
+                        width: 100%;
+                        padding: 15px 3px 1px 3px;
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        outline: none;
+                        font-size: 16px;
+                        &:focus,
+                        &:hover {
+                            border-bottom: 1px solid rgb(59, 66, 255);
+                        }
+                    }
+                    .icon {
+                        position: absolute;
+                        color: #6644e8;
+                        width: 24px;
+                        height: 24px;
+                        transform: translateX(-20px);
+                    }
+                }
+                #check {
+                    padding: 0 50px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    /*  */
+                    #icon_toggle {
+                        width: 25px;
+                        height: 25px;
+                        transition: all 2s ease;
+                        /*  */
+                    }
+                    label {
+                        input[type=checkbox] {
+                            display: none;
+                        }
+                    }
+                    span {
+                        color: gray;
+                        margin-left: 10px;
+                        font-size: 12px;
+                    }
+                }
+                #container_submit {
+                    input[type="submit"] {
+                        padding: 8px 50px;
+                        border: none;
+                        border-radius: 1000px;
+                        background-color: #6644e8;
+                        color: #fff;
+                        //sombra
+                        -webkit-box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.47);
+                        box-shadow: 5px 5px 11px 0px rgba(0, 0, 0, 0.47);
+                    }
+                }
+            }
+        }
+    }
+}
