@@ -1,0 +1,67 @@
+#tela_04 {
+    /* varibles */
+    $preto: #202020;
+    $branco: #faf2f2;
+    $cinza: #6e6e6e;
+    $header_h: 0px;
+    $header_w: 100%;
+    $footer_w: 100%;
+    $footer_h: 0px;
+    $main_h: calc(100vh - $header_h - $footer_h);
+    $main_w: 100%;
+    /* varibles */
+    >header {
+        display: none;
+    }
+    >main {
+        width: $main_w;
+        height: $main_h;
+        background-color: $branco;
+        color: $preto;
+        position: relative;
+        #wrap_logo {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            #logo {
+                width: 150px;
+                height: 150px;
+                padding: 1px;
+                border-radius: 50%;
+                border: 3px solid $cinza;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    padding: 5px;
+                    border: 3px solid $preto;
+                    object-fit: cover;
+                }
+            }
+        }
+        #wrap_form {
+            position: absolute;
+            width: 100%;
+            height: 65%;
+            bottom: 0px;
+            background-color: #00ff9d;
+            padding: 15px 10px;
+            border-radius: 30px 30px 0 0;
+            #tit_sub {
+                margin: 15px 0;
+                #tit {
+                    font-size: 35px;
+                    font-weight: 600;
+                }
+                #sub {
+                    color: $cinza;
+                }
+            }
+        }
+    }
+    >footer {
+        display: none;
+    }
+}
