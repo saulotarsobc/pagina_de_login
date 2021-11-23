@@ -318,4 +318,100 @@
   display: none;
 }
 
+#tela6 {
+  /* varibles */
+  /* varibles */
+}
+#tela6 > main {
+  width: 100%;
+  height: calc(100vh - 0px - 0px);
+  display: flex;
+  justify-content: center;
+  /*  */
+  /* scrol */
+  /* scrol */
+}
+#tela6 > main ::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+#tela6 > main ::-webkit-scrollbar-thumb {
+  background: #A8A8A8;
+  border-radius: 30px;
+}
+#tela6 > main ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(150deg, #707070 32%, #ADADAD 80%);
+}
+#tela6 > main ::-webkit-scrollbar-track {
+  background: #C7C7C7;
+  border-radius: 0px;
+  box-shadow: inset 1.8px 4px 9px 0px #FFFFFF;
+}
+#tela6 > main #wrap_timeline {
+  /* scrol */
+  /* scrol */
+  background-color: #202020;
+  color: #faf2f2;
+  width: 400px;
+  padding: 40px;
+  overflow-y: scroll;
+  /*  */
+}
+#tela6 > main #wrap_timeline ::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+#tela6 > main #wrap_timeline ::-webkit-scrollbar-thumb {
+  background: #A8A8A8;
+  border-radius: 0px;
+}
+#tela6 > main #wrap_timeline ::-webkit-scrollbar-thumb:hover {
+  background: #FF8F8F;
+}
+#tela6 > main #wrap_timeline ::-webkit-scrollbar-track {
+  background: #C7C7C7;
+  border-radius: 0px;
+  box-shadow: inset 1.8px 4px 9px 0px #FFFFFF;
+}
+#tela6 > main #wrap_timeline .card {
+  position: relative;
+  /* line */
+  /*  */
+}
+#tela6 > main #wrap_timeline .card:hover .date::before {
+  -webkit-box-shadow: 1px 1px 20px 0px white;
+  box-shadow: 1px 1px 20px 0px white;
+}
+#tela6 > main #wrap_timeline .card::before {
+  content: "";
+  width: 2px;
+  height: calc(100% + 10px);
+  background-color: #faf2f2;
+  position: absolute;
+  transform: translateX(-22px);
+}
+#tela6 > main #wrap_timeline .card .date {
+  /* ball */
+}
+#tela6 > main #wrap_timeline .card .date::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.1s ease-in-out;
+  background-color: #faf2f2;
+  position: absolute;
+  transform: translate(-30px, 2px);
+}
+#tela6 > main #wrap_timeline .card .tit {
+  font-size: 20px;
+}
+#tela6 > main #wrap_timeline .card .descricao {
+  font-style: italic;
+  font-size: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid gray;
+}
+
 /*# sourceMappingURL=main.css.map */
