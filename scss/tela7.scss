@@ -1,4 +1,5 @@
 #tela7 {
+    /* 16:50:50 - 24/11/21 */
     /* varibles */
     $preto: #202020;
     $branco: #faf2f2;
@@ -14,6 +15,7 @@
     /*  */
     width: 100%;
     height: 100vh;
+    min-width: 320px;
     /*  */
     >header {
         position: relative;
@@ -82,7 +84,7 @@
         }
         #menu {
             position: absolute;
-            background-color: #5146ee;
+            background-color: #d3f559;
             color: $branco;
             top: $header_h;
             left: 100%;
@@ -101,15 +103,25 @@
             /* end Transição do menu */
             /*  */
             ul {
-                height: 500px;
-                width: 200px;
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: space-around;
                 li {
                     font-size: 30px;
+                    padding: 2px 100px;
+                    width: 80%;
+                    border-radius: 5px;
+                    text-align: center;
+                    transition: transform .2s ease-in-out;
                     /*  */
+                    &+li {
+                        margin-top: 15px;
+                    }
+                    &:hover {
+                        background-color: #20202044;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }
@@ -123,6 +135,9 @@
             width: 100%;
             height: 100%;
             background-color: #49ffa4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
     /*  */
@@ -130,5 +145,10 @@
         width: $footer_w;
         height: $footer_h;
         background-color: #9c95ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 11px;
+        color: rgb(31, 31, 31);
     }
 }
