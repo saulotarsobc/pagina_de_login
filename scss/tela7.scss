@@ -116,14 +116,19 @@
     }
     /*  */
     >main {
-        background-color: #6e6e6e;
         width: $main_w;
         height: $main_h;
+        /*  */
+        #wrap_contant {
+            width: 100%;
+            height: 100%;
+            background-color: #49ffa4;
+        }
     }
     /*  */
     >footer {
         width: $footer_w;
         height: $footer_h;
-        background-color: $branco;
+        background-color: #9c95ff;
     }
 }
