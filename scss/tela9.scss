@@ -1,84 +1,85 @@
 #tela9 {
+    /* var */
+    $trasition: all 0.2s ease-in-out 0s;
+    $red: #ff4f4f;
+    $green: #8aff8a;
+    /* var */
     width: 100%;
     height: 100vh;
     background-color: rgb(255, 255, 255);
-    /*  */
     width: 100%;
     height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#tela9 main #wrap label #wrap_toglle {
-    cursor: pointer;
-    position: relative;
-    width: 200px;
-    height: 100px;
-    background-color: rgb(255, 79, 79);
-    border-radius: 50px;
-    transition: all 0.2s ease-in-out 0s;
-    box-shadow: rgb(255, 79, 79) 5px 5px 16px -2px;
-}
-
-#tela9 main #wrap label #wrap_toglle #face {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    left: 10px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);
-    transition: all 0.2s ease-in-out 0s;
-}
-
-#tela9 main #wrap label #wrap_toglle #face #olhos {
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    margin-top: 20px;
-    left: 20px;
-    border-radius: 50px;
-    background-color: rgb(255, 79, 79);
-    box-shadow: rgb(255, 79, 79) 26px 0px 0px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-#tela9 main #wrap label #wrap_toglle #face #boca {
-    position: absolute;
-    background-color: rgb(255, 79, 79);
-    width: 40px;
-    height: 10px;
-    left: 20px;
-    bottom: 18px;
-    border-radius: 50px;
-    transition: all 0.2s ease-in-out 0s;
-}
-
-#tela9 main #wrap #check {
-    display: none;
-}
-
-#tela9 main #wrap #check:checked+label #wrap_toglle {
-    background-color: rgb(138, 255, 138);
-    box-shadow: rgb(138, 255, 138) 5px 5px 16px -2px;
-}
-
-#tela9 main #wrap #check:checked+label #wrap_toglle #face {
-    left: 112px;
-}
-
-#tela9 main #wrap #check:checked+label #wrap_toglle #face #olhos {
-    background-color: rgb(138, 255, 138);
-    box-shadow: rgb(138, 255, 138) 26px 0px 0px;
-}
-
-#tela9 main #wrap #check:checked+label #wrap_toglle #face #boca {
-    position: absolute;
-    background-color: rgb(138, 255, 138);
-    width: 40px;
-    height: 20px;
-    left: 20px;
-    bottom: 10px;
-    border-radius: 0px 0px 50px 50px;
+    main {
+        #wrap {
+            label {
+                #wrap_toglle {
+                    cursor: pointer;
+                    position: relative;
+                    width: 200px;
+                    height: 100px;
+                    background-color: $red;
+                    border-radius: 50px;
+                    transition: $trasition;
+                    box-shadow: $red 5px 5px 16px -2px;
+                    #face {
+                        position: absolute;
+                        width: 80px;
+                        height: 80px;
+                        top: 10px;
+                        left: 10px;
+                        border-radius: 50%;
+                        background-color: rgb(255, 255, 255);
+                        transition: $trasition;
+                        #olhos {
+                            position: absolute;
+                            width: 14px;
+                            height: 14px;
+                            margin-top: 20px;
+                            left: 20px;
+                            border-radius: 50px;
+                            background-color: $red;
+                            box-shadow: $red 26px 0px 0px;
+                            transition: $trasition;
+                        }
+                        #boca {
+                            position: absolute;
+                            background-color: $red;
+                            width: 40px;
+                            height: 10px;
+                            left: 20px;
+                            bottom: 18px;
+                            border-radius: 50px;
+                            transition: $trasition;
+                        }
+                    }
+                }
+            }
+            #check {
+                display: none;
+            }
+            #check:checked+label #wrap_toglle {
+                background-color: $green;
+                box-shadow: $green 5px 5px 16px -2px;
+                #face {
+                    left: 112px;
+                    #olhos {
+                        background-color: $green;
+                        box-shadow: $green 26px 0px 0px;
+                    }
+                    #boca {
+                        position: absolute;
+                        background-color: $green;
+                        width: 40px;
+                        height: 20px;
+                        left: 20px;
+                        bottom: 10px;
+                        border-radius: 0px 0px 50px 50px;
+                    }
+                }
+            }
+        }
+    }
 }
