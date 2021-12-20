@@ -1,0 +1,66 @@
+#tela11 {
+    /* var */
+    $trasition: all .1s ease-in-out;
+    /* var */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*  */
+    #bat_wrap {
+        background-color: #dfdfdf;
+        box-shadow: #000 3px 3px 9px -2px;
+        border: 15px solid gray;
+        width: 400px;
+        height: 180px;
+        border-radius: 10px;
+        padding: 3px;
+        transition: $trasition;
+        display: flex;
+        /*  */
+        .bar {
+            width: 70px;
+            height: 100%;
+            border-radius: 10px;
+            background-color: gray;
+            // box-shadow: #000 3px 3px 9px -2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: $trasition;
+            &+.bar {
+                margin-left: 5px;
+            }
+            /*  */
+            #led {
+                background-color: rgb(255, 70, 70);
+                width: 20px;
+                height: 100px;
+                border-radius: 10px;
+            }
+        }
+    }
+    #polo {
+        width: 20px;
+        height: 100px;
+        background-color: gray;
+        border-radius: 0 10px 10px 0;
+        // box-shadow: #000 3px 3px 9px -2px;
+    }
+    #check {
+        display: none;
+    }
+    #check:checked+label {
+        #toglle_wrap {
+            #toglle {
+                left: 322px;
+                /*  */
+                #led {
+                    background-color: rgb(64, 255, 64);
+                }
+            }
+        }
+    }
+}
